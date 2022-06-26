@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/a9bc83593c.js" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="">
+  </a>
+
+  <nav class="navbar">
+      <a href="index.html#Home">Home</a>
+      <!-- <a href="#About">About</a> -->
+      <a href="index.html#About">About</a>
+      <a href="index.html#Video">Video</a>
+      <a href="index.html#Personal">Personal</a>
+  </nav>
+</header>
+
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="Home">
+
+    <div class="content">
+        <h3>My Portfolio</h3>
+        <p>This is my website practice、<br>video editing and graphic works.</p>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<section class="products" id="About">
+
+    <h1 class="heading">About <span> me </span> </h1>
+
+    <div class="box-container">
+        <div class="box">
+          <div class="left">
+            <div class="website_img">
+              <img src="images/portrait.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <div class="content">
+              <h3>Yan-Cheng,Jhu(Steven)</h3>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <h3>Experiences</h3>
+              <p>&nbsp;</p>
+              <h4 style="color:#627091; font-weight: 600;">2020.Oct-Now</h4>
+              <h4>Department of Digital Content Application and Management</h4>
+              <br>
+              <h4>Volunteer of USR-Hub (University Social Responsibility)Project</h4>
+              <br>
+              <h4>Teaching Assistant of The Project on an issue-Oriented Approach to Narrative CompetenceDevelopment Across Disciplines</h4>
+              <br>
+              <h4>Digital Learning Partner project</h4>
+              <br>
+              <h4>part-time worker of Digital Content Application and Management</h4>
+            </div>
+
+          </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+<!-- review section starts  -->
+
+<section class="review" id="Video">
+
+    <h1 class="heading">Video <span> Editing </span> </h1>
+    <!-- swiper -->
+    <div class="videobox">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><iframe width="885" height="497" src="https://www.youtube.com/embed/uzoWE07sirc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe width="885" height="497" src="https://www.youtube.com/embed/FMFXI2nhw1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe width="885" height="497" src="https://www.youtube.com/embed/zjSvl2qXlOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="Personal">
+
+    <h1 class="heading">Personal <span> Records </span> </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+              <a href="scenery.html">
+                <img src="images/scenery.jpg" alt="">
+              </a>
+              
+            </div>
+            <div class="content">
+                <a href="scenery.html" class="title">Scenery</a>
+                <p>In the past four years, the photos were recorded to this.</p>
+                <a href="scenery.html" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <a href="activities.html">
+              <img src="images/activities.jpg" alt="">
+            </a>  
+          </div>
+          <div class="content">
+              <a href="activities.html" class="title">Activities</a>
+              <p>The activities we participated in were recorded to this.</p>
+              <a href="activities.html" class="btn">read more</a>
+          </div>
+      </div>
+        <div class="box">
+            <div class="image">
+              <a href="paintings.html">
+                <img src="images/paintings.jpg" alt="">
+              </a>  
+            </div>
+            <div class="content">
+                <a href="paintings.html" class="title">Graphic works</a>
+                <p>Graphic works by using Adobe Illustrator it will update new works.<br></p>
+                <a href="paintings.html" class="btn">read more</a>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="credit">created by <span>Steven</span> | all rights reserved</div>
+
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop:true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+</body>
+</html>
