@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
 
-    <!-- font awesome cdn link  -->
-    <script src="https://kit.fontawesome.com/a9bc83593c.js" crossorigin="anonymous"></script>
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- custom css file link  -->
@@ -99,9 +97,9 @@
     <div class="videobox">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><iframe width="885" height="497" src="https://www.youtube.com/embed/uzoWE07sirc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="swiper-slide"><iframe width="885" height="497" src="https://www.youtube.com/embed/FMFXI2nhw1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="swiper-slide"><iframe width="885" height="497" src="https://www.youtube.com/embed/zjSvl2qXlOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe width="885" height="497" src="https://www.youtube.com/embed/uzoWE07sirc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe width="885" height="497" src="https://www.youtube.com/embed/FMFXI2nhw1E" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe width="885" height="497" src="https://www.youtube.com/embed/zjSvl2qXlOg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -203,12 +201,12 @@
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
     spaceBetween: 30,
-    centeredSlides: true,
-    loop:true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -216,5 +214,6 @@
     },
   });
 </script>
+
 </body>
 </html>
